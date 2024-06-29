@@ -1,6 +1,4 @@
 import { useState, useCallback,useEffect,useRef} from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -61,14 +59,14 @@ function App() {
           <input type="checkbox"
            defaultChecked={numberAllowed}
            id="numberInput"
-           onChange={(e)=>{setNumberAllowed((prev)=>(!prev))}} />
+           onChange={()=>{setNumberAllowed((prev)=>(!prev))}} />
            <label >Number</label>
         </div>
         <div className="flex items-center gap-x-2">
           <input type="checkbox"
            defaultChecked={charAllowed}
            id="charInput"
-           onChange={(e)=>{setCharAllowed((prev)=>(!prev))}} />
+           onChange={()=>{setCharAllowed((prev)=>(!prev))}} />
            <label >characters</label>
         </div>
       </div>
